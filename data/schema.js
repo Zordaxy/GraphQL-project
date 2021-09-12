@@ -19,7 +19,7 @@ const typeDefs = `
   }
 
   type Query {
-    getFriend(id: ID): Friend
+    getFriend(input: FriendInpit): Friend
   }
 
   input FriendInpit {
@@ -34,8 +34,12 @@ const typeDefs = `
 
   type Mutation {
     createFriend(input: FriendInpit): Friend
+    updateFriend(input: FriendInpit): Friend
+    deleteFriend(id: ID!): String
   }
 `;
+
+// "!" means not optional parameter
 
 // TODO: graphql-tools is deprecated. Migrate to @graphql-tools/utils
 const schema = makeExecutableSchema({typeDefs, resolvers});
