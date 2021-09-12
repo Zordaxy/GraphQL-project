@@ -1,5 +1,6 @@
 ## Sandbox project for GraphQL
-Partially based on https://www.linkedin.com/learning/graphql-essential-training/data-persistence-with-sq course
+Partially based on https://www.linkedin.com/learning/graphql-essential-training/data-persistence-with-sql course
+
 ---
 ### Initial setup:
 - `npm init`
@@ -13,8 +14,8 @@ Partially based on https://www.linkedin.com/learning/graphql-essential-training/
 
 ### SQL lite setup:
 - `npm install sqlite3 sequelize lodash casual`
----
 
+---
 ### GraphiQL request example:
 ```
 mutation {
